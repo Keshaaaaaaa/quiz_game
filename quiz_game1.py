@@ -9,3 +9,18 @@ options = [["A. Guido van Rossum", "B. Elon Musk", "C. Bill Gates", "D. Mark Zuc
            ["A. 1989", "B. 1991", "C. 2000", "D. 2016"],
            ["A. Lonely Island", "B. Smosh", "C. Monty Python", "D. SNL"],
            ["A. True", "B. False", "C. sometimes", "D. What's Earth?"]]
+def new_game():
+
+    questions_num = 1
+    answers = []
+    for key in questions:
+        print(key)
+        print('________________')
+        for el in options[questions_num - 1]:
+            print(el)
+        print('________________')
+        answer = input("Please enter anwer (A, B, C, D) :").upper()
+        answers.append(answer)
+
+
+new_game()
