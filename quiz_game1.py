@@ -38,13 +38,9 @@ def check_answer(answer, quess):
         return 0
 
 
-
-
 def display_score(correct_ans, quesses):
     total = (correct_ans / quesses) * 100
     print("your total score is :", total, "%")
-
-
 
 
 def play_again():
@@ -53,6 +49,8 @@ def play_again():
         return True
     elif response == 'NO':
         return False
+
+
 new_game()
 
 
@@ -60,5 +58,6 @@ def main():
     while play_again():
         new_game()
     print("BYEEE!")
+
 
 main()
